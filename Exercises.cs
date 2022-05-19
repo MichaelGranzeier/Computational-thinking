@@ -20,6 +20,19 @@ namespace template_csharp_computational_thinking
 
             // Enter your solution here
 
+            Console.WriteLine("Please enter a number and then press enter.");
+            string firstInput = Console.ReadLine();
+            int inputOne = Convert.ToInt32(firstInput);
+            Console.WriteLine("Please enter a second number and then press enter.");
+            string secondInput = Console.ReadLine();
+            int inputTwo = Convert.ToInt32(secondInput);
+
+            if (inputOne != inputTwo){
+                Console.WriteLine("The numbers " + inputOne + " and " + inputTwo + " are not equal to each other.");
+            } else {
+                Console.WriteLine("The numbers " + inputOne + " and " + inputTwo + " are the same number.");
+            }
+
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
         }
@@ -33,6 +46,9 @@ namespace template_csharp_computational_thinking
             Console.WriteLine("EVEN OR ODD?\n");
 
             // Enter your solution here
+
+            Console.WriteLine("Please enter a number and then press enter.");
+            string firstInput = Console.ReadLine();
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
