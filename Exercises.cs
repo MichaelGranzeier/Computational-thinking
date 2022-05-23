@@ -167,9 +167,13 @@ namespace template_csharp_computational_thinking
 
             // Enter your solution here
 
-            double people = 4;
-            double cost = 13;
-            double total = people * cost;
+            Console.WriteLine("please enter the number of prople splitting the bill.");
+            string people = Console.ReadLine();
+            double peopleTwo = Convert.ToDouble(people);
+            Console.WriteLine("please enter the cost per person.");
+            string cost = Console.ReadLine();
+            double costTwo = Convert.ToDouble(cost);
+            double total = peopleTwo * costTwo;
 
             if (total >= 50)
             {
@@ -179,9 +183,9 @@ namespace template_csharp_computational_thinking
             }
             else
             {
-                double disTwo = total * .9;
+                double disTwo = total * .95;
                 double disThree = Math.Round(disTwo, 2);
-                Console.WriteLine("You earned a 10% discount. Your total bill is $" + disThree);
+                Console.WriteLine("You earned a 5% discount. Your total bill is $" + disThree);
             }
 
             Console.Write("Press enter to return to the Main Menu");
@@ -337,7 +341,7 @@ namespace template_csharp_computational_thinking
             if (countOne > countTwo)
             {
                 Console.WriteLine("First is longer.");
-            }else if (countOne == countTwo)
+            }else if (countOne.Equals(countTwo))
             {
                 Console.WriteLine("Same-sizes!");
             }
