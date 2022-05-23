@@ -167,7 +167,22 @@ namespace template_csharp_computational_thinking
 
             // Enter your solution here
 
+            double people = 4;
+            double cost = 13;
+            double total = people * cost;
 
+            if (total >= 50)
+            {
+                double disOne = total * .9;
+                double dis = Math.Round(disOne, 2);
+                Console.WriteLine("You earned a 10% discount. Your total bill is $" + dis);
+            }
+            else
+            {
+                double disTwo = total * .9;
+                double disThree = Math.Round(disTwo, 2);
+                Console.WriteLine("You earned a 10% discount. Your total bill is $" + disThree);
+            }
 
             Console.Write("Press enter to return to the Main Menu");
             Console.ReadLine();
